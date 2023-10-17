@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Dancing+Script&display=swap');
+
+.dog-banner{
+    height: 400px;
+}
+
+.content{
+    background-image: url(/img/huellitas-fondo.jpg);
+    background-size: auto;
+    background-repeat: repeat;
+
+}
+
+/*.inicio-page{
+    background-color: beige;
+}*/
+
+.navbar-brand{
+    font-family: 'Dancing Script', cursive;
+    letter-spacing: 4px;
+    font-size: 3rem;
+    
+
+}
+.nav-frase{
+    font-size: 2rem;
+    font-family: 'Dancing Script', cursive;
+    letter-spacing: 4px;
+}
+
+h1, h2, h3, h4{
+    font-family: 'Dancing Script', cursive;
+    
+}
+
+li {
+    list-style:none;
+}
+
+.about ul li::before {
+	content: "🐶"
+}
+
+a{
+    letter-spacing: 2px;
+    font-size: 1.2rem;
+    position:relative;
+}
+.nav-item a:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background: white;
+    
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 0.2s ease-in-out;
+  }
+  .nav-item a:hover:after {
+   
+    transform-origin: left;
+    transform: scaleX(1);
+  }
+
+  .card:hover {
+    -webkit-transform:scale(1.1);transform:scale(1.1);
+  }
+ 
+  .navbar {
+    background: black;
+  }
